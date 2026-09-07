@@ -23,6 +23,8 @@ git push
 ## 폴더 구조
 
 ```
+class_practice/
+  README.md
 weeks/
   week02_algorithm_analysis_recursion/
   week03_array_based_sequences/
@@ -37,4 +39,5 @@ weeks/
   week15_final_review/
 ```
 
-각 폴더에는 그 주차의 학습 로그 템플릿(`README.md`)과 풀이 코드를 담는 `solutions/`가 있습니다.
+`class_practice/`에는 수업 시간에 진행한 예제와 실습 내용을 기록합니다.
+각 주차 폴더에는 학습 로그 템플릿(`README.md`)과 풀이 코드를 담는 `solutions/`가 있습니다.
