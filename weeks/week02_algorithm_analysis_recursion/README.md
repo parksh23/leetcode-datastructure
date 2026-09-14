@@ -25,6 +25,7 @@
 | 09-11 | 231 Power of Two | Math, Bit Manipulation | Easy | 15min | 2의 거듭제곱은 이진수에서 1비트가 하나뿐이라는 성질을 이용해 `n & (n - 1)`이 0인지 확인 | 시간 O(1), 공간 O(1) | `n & (n - 1)`이 최하위 1비트를 제거하는 원리와 `n > 0` 조건 기억하기 |
 | 09-12 | 268 Missing Number | Array, Math, Bit Manipulation | Easy | 20min | `1…n`과 배열의 모든 원소를 XOR하여 두 번 등장하는 값들을 소거하고 누락된 수를 계산 | 시간 O(n), 공간 O(1) | XOR의 교환·결합 법칙과 같은 수를 두 번 XOR하면 0이 되는 성질 기억하기 |
 | 09-12 | 241 Different Ways to Add Parentheses | Recursion, Divide and Conquer | Medium | 40min | 각 연산자를 분할점으로 삼아 왼쪽·오른쪽 부분식의 결과를 재귀적으로 구한 뒤 모든 조합을 계산 | 시간 O(Cₘ), 공간 O(Cₘ + m) (m은 연산자 수) | 같은 부분식을 반복 계산하므로 메모이제이션을 적용하는 방법 복습하기 |
+| 09-14 | 204 Count Primes | Array, Math, Number Theory | Medium | 35min | 에라토스테네스의 체를 사용해 각 소수의 제곱부터 n 미만의 배수를 합성수로 표시 | 시간 O(n log log n), 공간 O(n) | 배수 제거를 `i²`부터 시작하는 이유와 사용하지 않는 내부 함수 매개변수 정리하기 |
 
 
 풀이 코드는 `solutions/문제번호_영문슬러그.py` 형식으로 저장하세요.
