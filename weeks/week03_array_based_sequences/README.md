@@ -19,5 +19,6 @@
 | 09-14 | 283 Move Zeroes | Array, Two Pointers | Easy | 20min | 앞에서부터 0이 아닌 값을 다음 위치에 덮어쓰고, 남은 뒷부분을 0으로 채움 | 시간 O(n), 공간 O(n) | 현재 슬라이스 대입은 임시 0 리스트를 생성하므로 반복문으로 채워 보조 공간 O(1) 달성하기 |
 | 09-15 | 125 Valid Palindrome | String, Two Pointers | Easy | 15min | 소문자로 변환한 뒤 양끝 포인터에서 영숫자가 아닌 문자를 건너뛰며 같은지 비교 | 시간 O(n), 공간 O(n) | 전체 문자열의 소문자 복사 대신 비교할 문자만 변환하면 보조 공간을 줄일 수 있음 |
 | 09-15 | 643 Maximum Average Subarray I | Array, Sliding Window | Easy | 15min | 처음 k개 합을 구한 뒤 창이 이동할 때 빠진 값은 빼고 새 값은 더해 최대 합을 갱신 | 시간 O(n), 공간 O(k) | `nums[:k]` 슬라이스가 임시 리스트를 생성하므로 직접 합산하면 보조 공간 O(1) 가능 |
+| 09-19 | 724 Find Pivot Index | Array, Prefix Sum | Easy | 15min | 전체 합에서 왼쪽 누적합과 현재 값을 빼 오른쪽 합을 구하고, 양쪽 합이 같아지는 첫 인덱스를 반환 | 시간 O(n), 공간 O(1) | 현재 값을 왼쪽 합에 더하기 전에 비교해야 하며, 양 끝 인덱스도 확인하기 |
 
 풀이 코드는 `solutions/문제번호_영문슬러그.py` 형식으로 저장하세요.
