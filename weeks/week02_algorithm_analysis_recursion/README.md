@@ -25,6 +25,7 @@
 | 09-12 | 241 Different Ways to Add Parentheses | Recursion, Divide and Conquer | Medium | 40min | 각 연산자를 분할점으로 삼아 왼쪽·오른쪽 부분식의 결과를 재귀적으로 구한 뒤 모든 조합을 계산 | 시간 O(Cₘ), 공간 O(Cₘ + m) (m은 연산자 수) | 같은 부분식을 반복 계산하므로 메모이제이션을 적용하는 방법 복습하기 |
 | 09-14 | 204 Count Primes | Array, Math, Number Theory | Medium | 35min | 에라토스테네스의 체를 사용해 각 소수의 제곱부터 n 미만의 배수를 합성수로 표시 | 시간 O(n log log n), 공간 O(n) | 배수 제거를 `i²`부터 시작하는 이유와 사용하지 않는 내부 함수 매개변수 정리하기 |
 | 09-16 | 486 Predict the Winner | Recursion, Dynamic Programming, Game Theory | Medium | 50min | 양끝 숫자 중 하나를 고른 뒤 상대와의 최대 점수 차를 재귀적으로 계산하여 최종 점수 차가 0 이상인지 확인 | 시간 O(2ⁿ), 공간 O(n) | 같은 `(left, right)` 구간을 반복 계산하므로 메모이제이션을 적용해 시간 O(n²)로 개선하기 |
+| 09-21 | 416 Partition Equal Subset Sum | Array, Dynamic Programming | Medium | 75min | 전체 합이 홀수면 바로 False 반환, 짝수면 목표값(합/2)을 만들 수 있는 부분합들을 set으로 갱신하며 도달 가능한지 확인 | 시간 O(n·sum), 공간 O(sum) | set으로 도달 가능한 부분합을 관리하는 방식이 0/1 냅색 DP와 같은 원리임을 정리하기 |
 
 
 풀이 코드는 `solutions/문제번호_영문슬러그.py` 형식으로 저장하세요.
