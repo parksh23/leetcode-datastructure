@@ -24,5 +24,7 @@
 | 09-21 | 209 Minimum Size Subarray Sum | Array, Sliding Window | Medium | 35min | 오른쪽 포인터로 합을 늘리고 목표 이상이면 왼쪽 포인터를 옮기며 최소 길이를 갱신 | 시간 O(n), 공간 O(1) | 원소가 모두 양수라서 합이 커지고 작아지는 방향이 보장될 때만 이 방식이 가능함 |
 | 09-21 | 560 Subarray Sum Equals K | Array, Hash Table, Prefix Sum | Medium | 50min | 현재 누적합에서 k를 뺀 누적합의 등장 횟수를 해시맵에서 찾아 정답에 더함 | 시간 O(n), 공간 O(n) | 누적합 0의 빈도를 처음부터 1로 두면 시작 인덱스가 0인 경우를 별도 조건 없이 처리 가능 |
 | 09-21 | 728 Self Dividing Numbers | Math | Easy | 30min | 각 자리 숫자로 나누어떨어지는지 divmod로 하나씩 확인하고, 자리 숫자에 0이 있거나 나누어떨어지지 않으면 제외 | 시간 O((right-left)·d), 공간 O(1) (결과 리스트 제외) | divmod로 자리수를 분리하는 방법과 0으로 나눌 때 예외 처리하는 조건 기억하기 |
+| 09-22 | 338 Counting Bits | Dynamic Programming, Bit Manipulation | Easy | 30min | 이전 계산값을 재사용해 `i>>1`의 비트 수에 `i`의 최하위 비트를 더하는 점화식으로 각 수의 1의 개수를 구함 | 시간 O(n), 공간 O(1) (결과 리스트 제외) | 최하위 비트를 제거한 값의 결과를 재사용하는 점화식을 세우는 방법 복습하기 |
+| 09-22 | 3 Longest Substring Without Repeating Characters | Hash Table, String, Sliding Window | Medium | 60min | 해시맵으로 각 문자의 등장 여부를 추적하며 오른쪽 포인터를 넓히고, 중복이 나오면 왼쪽 포인터를 좁혀 최대 길이를 갱신 | 시간 O(n), 공간 O(min(n, 문자 종류 수)) | 문자 등장 횟수를 0/1로만 관리하는 로직이 왼쪽 포인터를 한 칸씩만 옮겨도 항상 맞는지 검증하기 |
 
 풀이 코드는 `solutions/문제번호_영문슬러그.py` 형식으로 저장하세요.
