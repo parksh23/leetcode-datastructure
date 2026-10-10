@@ -22,5 +22,7 @@
 | 10-07 | 86 Partition List | Linked List, Two Pointers | Medium | 35min | x보다 작은 노드와 크거나 같은 노드를 각각 더미 헤드를 가진 두 리스트로 나눠 이어 붙이고, 뒤쪽 리스트의 끝을 None으로 끊은 뒤 두 리스트를 연결 | 시간 O(n), 공간 O(1) | 큰 값 리스트의 마지막 노드의 next를 `None`으로 끊지 않으면 사이클이 생길 수 있음을 기억하기 |
 | 10-09 | 21 Merge Two Sorted Lists | Linked List | Easy | 15min | 더미 헤드를 두고 두 리스트의 현재 노드 값을 비교해 더 작은 노드를 결과 리스트 뒤에 이어 붙이며 전진하고, 한쪽이 끝나면 남은 리스트를 통째로 연결 | 시간 O(n + m), 공간 O(1) | 반복문이 끝난 뒤 남은 리스트를 이어 붙이는 것을 잊지 말고, 반환은 더미 헤드의 `next`임을 기억하기 |
 | 10-09 | 143 Reorder List | Linked List, Two Pointers | Medium | 40min | 빠른/느린 포인터로 중간을 찾아 리스트를 둘로 끊고, 뒤쪽 절반을 뒤집은 뒤 앞쪽 절반과 한 노드씩 번갈아 끼워 넣어 제자리에서 재배치 | 시간 O(n), 공간 O(1) | 중간에서 `slow.next = None`으로 끊지 않으면 사이클이 생기며, 번갈아 연결할 때 다음 노드를 먼저 저장해야 함을 기억하기 |
+| 10-10 | 203 Remove Linked List Elements | Linked List | Easy | 20min | 더미 헤드를 앞에 붙이고 순회하면서 삭제할 값이면 prev의 next를 건너뛰게 연결하고, 아니면 prev를 한 칸 전진시킴 | 시간 O(n), 공간 O(1) | 헤드 노드가 삭제 대상일 때를 위해 더미 헤드가 필요하고, 삭제한 경우에는 prev를 전진시키면 안 됨을 기억하기 |
+| 10-10 | 160 Intersection of Two Linked Lists | Linked List, Two Pointers | Easy | 20min | 두 포인터가 각자 리스트 끝에 도달하면 상대 리스트의 head로 옮겨 가 길이 차이를 상쇄시키고, 두 포인터가 같아지는 지점(교차 노드 또는 둘 다 None)에서 반환 | 시간 O(m + n), 공간 O(1) | 교차점이 없어도 두 포인터가 동시에 None이 되어 루프가 끝난다는 점과, None에 도달한 뒤에 head를 바꿔야 한다는 점 기억하기 |
 
 풀이 코드는 `solutions/문제번호_영문슬러그.py` 형식으로 저장하세요.
