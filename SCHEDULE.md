@@ -11,11 +11,12 @@
 | 3 | 5. Array-Based Sequences | Array, String, Two Pointers, Sliding Window | |
 | 4 | 6. Stacks, Queues, Deques | Stack, Queue, Monotonic Stack, Design | 9/23 1차 퀴즈 |
 | 5 | 7. Linked Lists | Linked List | |
-| 6 | 10. Maps, Hash Tables, Skip Lists | Hash Table, Hash Map, Design | 10/7 2차 퀴즈 |
-| 7 | 8. Trees | Tree, Binary Tree, DFS, BFS | |
+| 6 | 7. Linked Lists | Linked List | 10/7 2차 퀴즈 |
+| 7 | 10. Maps, Hash Tables, Skip Lists | Hash Table, Hash Map, Design | |
 | 8 | 중간고사 (3,4,5,6,7,10장 전범위) | 2~7주차 태그 종합 복습 | 10/19 중간고사 |
-| 9 | 9. Priority Queues | Heap / Priority Queue | |
-| 10~11 | 11. Search Trees | Binary Search Tree, Binary Search | 11/16 3차 퀴즈 |
+| 9 | 8. Trees | Tree, Binary Tree, DFS, BFS | |
+| 10 | 9. Priority Queues | Heap / Priority Queue | 11/16 3차 퀴즈 |
+| 11 | 11. Search Trees | Binary Search Tree, Binary Search | 11/16 3차 퀴즈 |
 | 12~14 | 14. Graph Algorithms | Graph, BFS/DFS, Union Find, Topological Sort, Shortest Path | 11/30 4차 퀴즈 |
 | 15 | 기말고사 (8·9·11·14장) | 9~14주차 태그 종합 복습 | 12/16 기말고사 |
 
