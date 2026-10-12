@@ -12,7 +12,7 @@
 
 ```
 git add weeks/weekNN.../solutions/xxx.py weeks/weekNN.../README.md
-git commit -m "day: LC 123 문제이름 (태그) - week NN"
+git commit -m "MM-DD: LC 123 문제이름 (태그) - week N"
 git push
 ```
 
@@ -27,12 +27,12 @@ weeks/
   week02_algorithm_analysis_recursion/
   week03_array_based_sequences/
   week04_stacks_queues_deques/
-  week05_linked_lists/
-  week06_trees/
-  week07_priority_queues/
+  week05_06_linked_lists/
+  week07_maps_hash_tables_skiplists/
   week08_midterm_review/
-  week09_maps_hash_tables_skiplists/
-  week10_11_search_trees/
+  week09_trees/
+  week10_priority_queues/
+  week11_search_trees/
   week12_14_graph_algorithms/
   week15_final_review/
 ```
