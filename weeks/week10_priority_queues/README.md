@@ -1,7 +1,7 @@
-# Week 10 - Priority Queues
+# Week 10~11 - Search Trees
 
-- 교재 범위: 9.Priority Queues
-- 이번 주 LeetCode 태그: **Heap / Priority Queue**
+- 교재 범위: 11.Search Trees
+- 이번 주 LeetCode 태그: **Binary Search Tree, Binary Search**
 - 일정: **11/16 3차 퀴즈**
 
 ## 개념 한 줄 요약
