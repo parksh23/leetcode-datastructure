@@ -21,5 +21,6 @@
 | 09-29 | 155 Min Stack | Stack, Design | Medium | 45min | 값을 push할 때마다 보조 스택(min_stack)에 지금까지의 최솟값도 함께 push해서 getMin을 O(1)에 조회 | 시간 O(1) (모든 연산), 공간 O(n) | pop할 때 원래 스택과 min_stack을 항상 같이 pop해서 두 스택의 길이를 맞춰야 함을 기억하기 |
 | 09-30 | 622 Design Circular Queue | Queue, Design, Array | Medium | 35min | 고정 크기 배열과 start/end 포인터를 나머지 연산으로 순환시켜 큐를 구현하고, current_len으로 가득 참/비어있음을 판단 | 시간 O(1) (모든 연산), 공간 O(k) | Rear는 다음에 넣을 위치(end)의 바로 앞 원소를 가리켜야 하므로 `end - 1` 인덱스를 참조해야 함을 기억하기 |
 | 10-05 | 641 Design Circular Deque | Queue, Design, Array | Medium | 40min | 622의 원형 배열 구조를 확장해 앞쪽 삽입은 start를, 뒤쪽 삭제는 rear를 `(idx + k - 1) % k`로 한 칸 뒤로 이동시켜 양쪽 연산을 처리 | 시간 O(1) (모든 연산), 공간 O(k) | 포인터를 뒤로 옮길 때 음수 인덱스가 되지 않도록 `+ k`를 더한 뒤 나머지 연산을 해야 함을 기억하기 |
+| 10-18 | 772 Basic Calculator III | Stack, Math, String, Recursion | Hard | 75min | 재귀 헬퍼로 문자열을 순회하며 숫자를 누적하고 직전 연산자(op)에 따라 +/-는 스택에 push, *·/는 스택 top과 계산해 다시 push한 뒤 마지막에 합산하며, '('를 만나면 재귀 호출로 괄호 안 결과와 닫는 괄호 위치를 받아오고 ')'에서 반환 | 시간 O(n), 공간 O(n) (스택 + 재귀 깊이) | 연산자를 만났을 때 직전 연산자(op)로 처리한 뒤 op를 갱신하는 순서, 마지막 문자 처리(idx == len(s) - 1), 나눗셈은 0 방향 절삭이라 int(a / b)를 써야 함을 기억하기 |
 
 풀이 코드는 `solutions/문제번호_영문슬러그.py` 형식으로 저장하세요.

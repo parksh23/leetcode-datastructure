@@ -23,5 +23,6 @@
 | 10-15 | 205 Isomorphic Strings | Hash Table, String | Easy | 15min | s→t, t→s 두 방향의 해시맵을 만들어 같은 인덱스의 문자 쌍이 기존 매핑과 충돌하면 False를 반환하고, 끝까지 충돌이 없으면 True | 시간 O(n), 공간 O(1) (문자 집합 크기에 한정) | 한 방향 매핑만 확인하면 서로 다른 문자가 같은 문자로 매핑되는 경우(예: "ab"→"aa")를 놓치므로 양방향 매핑이 필요함을 기억하기 |
 | 10-15 | 242 Valid Anagram | Hash Table, String, Sorting | Easy | 15min | 두 문자열의 길이가 다르면 바로 False, 같으면 각각 문자별 등장 횟수를 딕셔너리로 세어 두 딕셔너리가 같은지 비교 | 시간 O(n), 공간 O(1) (문자 종류 수에 한정) | 길이를 먼저 비교해 빠르게 걸러낼 수 있고, collections.Counter나 정렬 후 비교(O(n log n))로도 풀 수 있음을 기억하기 |
 | 10-15 | 290 Word Pattern | Hash Table, String | Easy | 25min | s를 공백으로 split해 패턴 길이와 단어 수를 먼저 비교하고, 패턴 문자↔단어 양방향 해시맵으로 기존 매핑과 충돌하면 False | 시간 O(n), 공간 O(n) | 패턴 길이와 단어 수가 다른 경우를 먼저 걸러야 하고, 205와 같은 양방향 매핑(일대일 대응) 아이디어임을 기억하기 |
+| 10-18 | 437 Path Sum III | Tree, DFS, Hash Table, Prefix Sum | Medium | 50min | DFS로 루트부터 현재 노드까지의 누적합(curr_sum)을 구하고, 해시맵에 저장된 누적합 등장 횟수에서 (curr_sum - targetSum)의 횟수를 더해 경로 개수를 셈. 자식 탐색이 끝나면 현재 누적합 횟수를 되돌려(백트래킹) 다른 가지에 영향이 없게 함 | 시간 O(n), 공간 O(h) (해시맵과 재귀 깊이) | prefix_counts[0] = 1로 루트부터 시작하는 경로를 처리해야 하고, 탐색 후 횟수를 -1 해서 되돌리는 것을 잊지 않기. 로컬 실행 시 defaultdict import 필요 |
 
 풀이 코드는 `solutions/문제번호_영문슬러그.py` 형식으로 저장하세요.
